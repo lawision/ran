@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Records</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>Admin Panel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Manage Products</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="users.html">Users</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <header>
+        <h1>Sales Records</h1>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <label for="filterSelect">Filter by:</label>
+        <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="day">Last 24 Hours</option>
+            <option value="week">Last 7 Days</option>
+            <option value="month">Last 30 Days</option>
+        </select>
+    </section>
+
+    <section class="sales-list">
+        <h2>Recent Sales</h2>
+        <table id="salesTable">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date & Time</th> <!-- New column for date and time -->
+                    <th>Products</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            
+            <tbody id="salesTableBody">
+                <!-- Sales rows will be dynamically loaded here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="sales.js"></script>
+</body>
+</html>

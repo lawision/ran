@@ -1,0 +1,141 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Filter Section */
+.filter-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-section label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-section select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sales List Section */
+.sales-list {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sales-list h2 {
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+/* Sales Table */
+#salesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#salesTable th,
+#salesTable td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+#salesTable th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+}
+
+#salesTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#salesTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+#salesTable td {
+    color: #555;
+}
+
+#salesTable .amount {
+    font-weight: bold;
+    color: #007bff;
+}
